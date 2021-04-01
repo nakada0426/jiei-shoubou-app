@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,19 @@
 		0E004354260F0E6B00FE737E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E004352260F0E6B00FE737E /* Main.storyboard */; };
 		0E004356260F0E6D00FE737E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E004355260F0E6D00FE737E /* Assets.xcassets */; };
 		0E004359260F0E6D00FE737E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E004357260F0E6D00FE737E /* LaunchScreen.storyboard */; };
+		0E004362260F11D700FE737E /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E004361260F11D700FE737E /* QuizViewController.swift */; };
+		0E004365260F130400FE737E /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E004364260F130400FE737E /* ScoreViewController.swift */; };
+		0E004368260F175F00FE737E /* quiz1.csv in Resources */ = {isa = PBXBuildFile; fileRef = 0E004367260F175F00FE737E /* quiz1.csv */; };
+		0E00436C260F21A800FE737E /* incorrect.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E00436A260F21A800FE737E /* incorrect.png */; };
+		0E00436D260F21A800FE737E /* correct.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E00436B260F21A800FE737E /* correct.png */; };
+		0E004370260F21E700FE737E /* image.zip in Resources */ = {isa = PBXBuildFile; fileRef = 0E00436F260F21E700FE737E /* image.zip */; };
+		0E004373260F309800FE737E /* SelectLevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E004372260F309800FE737E /* SelectLevelViewController.swift */; };
+		0E004376260F38B100FE737E /* quiz2.csv in Resources */ = {isa = PBXBuildFile; fileRef = 0E004375260F38B100FE737E /* quiz2.csv */; };
+		0E004379260F38FA00FE737E /* quiz3.csv in Resources */ = {isa = PBXBuildFile; fileRef = 0E004378260F38FA00FE737E /* quiz3.csv */; };
+		0E5B43F9260F93130067647F /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 0E5B43F8260F93130067647F /* Lottie */; };
+		0E5B43FC260F95AA0067647F /* 38473-fireworks-icon.json in Resources */ = {isa = PBXBuildFile; fileRef = 0E5B43FB260F95AA0067647F /* 38473-fireworks-icon.json */; };
+		0E638F1726149DBA008C48CD /* launch-image2.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E638F1626149DBA008C48CD /* launch-image2.png */; };
+		B92DBCEAB1DB93BAAFA58F82 /* Pods_Jiei_shoubou_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B85C177806398787C6C5C0E8 /* Pods_Jiei_shoubou_test.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +37,20 @@
 		0E004355260F0E6D00FE737E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E004358260F0E6D00FE737E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0E00435A260F0E6D00FE737E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E004361260F11D700FE737E /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		0E004364260F130400FE737E /* ScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
+		0E004367260F175F00FE737E /* quiz1.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = quiz1.csv; sourceTree = "<group>"; };
+		0E00436A260F21A800FE737E /* incorrect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = incorrect.png; sourceTree = "<group>"; };
+		0E00436B260F21A800FE737E /* correct.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = correct.png; sourceTree = "<group>"; };
+		0E00436F260F21E700FE737E /* image.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = image.zip; sourceTree = "<group>"; };
+		0E004372260F309800FE737E /* SelectLevelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectLevelViewController.swift; sourceTree = "<group>"; };
+		0E004375260F38B100FE737E /* quiz2.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = quiz2.csv; sourceTree = "<group>"; };
+		0E004378260F38FA00FE737E /* quiz3.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = quiz3.csv; sourceTree = "<group>"; };
+		0E5B43FB260F95AA0067647F /* 38473-fireworks-icon.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "38473-fireworks-icon.json"; sourceTree = "<group>"; };
+		0E638F1626149DBA008C48CD /* launch-image2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "launch-image2.png"; sourceTree = "<group>"; };
+		8DFC3D274305C7D1D34B34BD /* Pods-Jiei-shoubou-test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jiei-shoubou-test.release.xcconfig"; path = "Target Support Files/Pods-Jiei-shoubou-test/Pods-Jiei-shoubou-test.release.xcconfig"; sourceTree = "<group>"; };
+		A8DFDA14FAA53902D90CC09F /* Pods-Jiei-shoubou-test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jiei-shoubou-test.debug.xcconfig"; path = "Target Support Files/Pods-Jiei-shoubou-test/Pods-Jiei-shoubou-test.debug.xcconfig"; sourceTree = "<group>"; };
+		B85C177806398787C6C5C0E8 /* Pods_Jiei_shoubou_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Jiei_shoubou_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +58,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E5B43F9260F93130067647F /* Lottie in Frameworks */,
+				B92DBCEAB1DB93BAAFA58F82 /* Pods_Jiei_shoubou_test.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,7 +70,13 @@
 			isa = PBXGroup;
 			children = (
 				0E00434B260F0E6B00FE737E /* Jiei-shoubou-test */,
+				0E00436B260F21A800FE737E /* correct.png */,
+				0E00436A260F21A800FE737E /* incorrect.png */,
+				0E638F1626149DBA008C48CD /* launch-image2.png */,
+				0E00436F260F21E700FE737E /* image.zip */,
 				0E00434A260F0E6B00FE737E /* Products */,
+				CD283736A4CCF5569A0A6350 /* Pods */,
+				55A8DB120FF8383E0E40748D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +94,36 @@
 				0E00434C260F0E6B00FE737E /* AppDelegate.swift */,
 				0E00434E260F0E6B00FE737E /* SceneDelegate.swift */,
 				0E004350260F0E6B00FE737E /* ViewController.swift */,
+				0E5B43FB260F95AA0067647F /* 38473-fireworks-icon.json */,
 				0E004352260F0E6B00FE737E /* Main.storyboard */,
 				0E004355260F0E6D00FE737E /* Assets.xcassets */,
 				0E004357260F0E6D00FE737E /* LaunchScreen.storyboard */,
 				0E00435A260F0E6D00FE737E /* Info.plist */,
+				0E004361260F11D700FE737E /* QuizViewController.swift */,
+				0E004364260F130400FE737E /* ScoreViewController.swift */,
+				0E004367260F175F00FE737E /* quiz1.csv */,
+				0E004372260F309800FE737E /* SelectLevelViewController.swift */,
+				0E004375260F38B100FE737E /* quiz2.csv */,
+				0E004378260F38FA00FE737E /* quiz3.csv */,
 			);
 			path = "Jiei-shoubou-test";
+			sourceTree = "<group>";
+		};
+		55A8DB120FF8383E0E40748D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B85C177806398787C6C5C0E8 /* Pods_Jiei_shoubou_test.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD283736A4CCF5569A0A6350 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A8DFDA14FAA53902D90CC09F /* Pods-Jiei-shoubou-test.debug.xcconfig */,
+				8DFC3D274305C7D1D34B34BD /* Pods-Jiei-shoubou-test.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,15 +133,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0E00435D260F0E6D00FE737E /* Build configuration list for PBXNativeTarget "Jiei-shoubou-test" */;
 			buildPhases = (
+				05BB20D7CB2C2B8A1522C898 /* [CP] Check Pods Manifest.lock */,
 				0E004345260F0E6B00FE737E /* Sources */,
 				0E004346260F0E6B00FE737E /* Frameworks */,
 				0E004347260F0E6B00FE737E /* Resources */,
+				233D2FFB4088CC1154CE5A78 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "Jiei-shoubou-test";
+			packageProductDependencies = (
+				0E5B43F8260F93130067647F /* Lottie */,
+			);
 			productName = "Jiei-shoubou-test";
 			productReference = 0E004349260F0E6B00FE737E /* Jiei-shoubou-test.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +174,9 @@
 				Base,
 			);
 			mainGroup = 0E004340260F0E6B00FE737E;
+			packageReferences = (
+				0E5B43F7260F93130067647F /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			productRefGroup = 0E00434A260F0E6B00FE737E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -124,13 +191,63 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E00436C260F21A800FE737E /* incorrect.png in Resources */,
 				0E004359260F0E6D00FE737E /* LaunchScreen.storyboard in Resources */,
+				0E00436D260F21A800FE737E /* correct.png in Resources */,
+				0E004370260F21E700FE737E /* image.zip in Resources */,
 				0E004356260F0E6D00FE737E /* Assets.xcassets in Resources */,
+				0E5B43FC260F95AA0067647F /* 38473-fireworks-icon.json in Resources */,
+				0E004379260F38FA00FE737E /* quiz3.csv in Resources */,
 				0E004354260F0E6B00FE737E /* Main.storyboard in Resources */,
+				0E004376260F38B100FE737E /* quiz2.csv in Resources */,
+				0E638F1726149DBA008C48CD /* launch-image2.png in Resources */,
+				0E004368260F175F00FE737E /* quiz1.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		05BB20D7CB2C2B8A1522C898 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Jiei-shoubou-test-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		233D2FFB4088CC1154CE5A78 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Jiei-shoubou-test/Pods-Jiei-shoubou-test-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Jiei-shoubou-test/Pods-Jiei-shoubou-test-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Jiei-shoubou-test/Pods-Jiei-shoubou-test-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0E004345260F0E6B00FE737E /* Sources */ = {
@@ -139,7 +256,10 @@
 			files = (
 				0E004351260F0E6B00FE737E /* ViewController.swift in Sources */,
 				0E00434D260F0E6B00FE737E /* AppDelegate.swift in Sources */,
+				0E004365260F130400FE737E /* ScoreViewController.swift in Sources */,
 				0E00434F260F0E6B00FE737E /* SceneDelegate.swift in Sources */,
+				0E004362260F11D700FE737E /* QuizViewController.swift in Sources */,
+				0E004373260F309800FE737E /* SelectLevelViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,10 +403,12 @@
 		};
 		0E00435E260F0E6D00FE737E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8DFDA14FAA53902D90CC09F /* Pods-Jiei-shoubou-test.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_TEAM = 4QP9Y4N26D;
 				INFOPLIST_FILE = "Jiei-shoubou-test/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -296,16 +418,18 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ny.Jiei-shoubou-test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		0E00435F260F0E6D00FE737E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DFC3D274305C7D1D34B34BD /* Pods-Jiei-shoubou-test.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_TEAM = 4QP9Y4N26D;
 				INFOPLIST_FILE = "Jiei-shoubou-test/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -315,7 +439,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ny.Jiei-shoubou-test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -341,6 +465,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0E5B43F7260F93130067647F /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.2.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0E5B43F8260F93130067647F /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0E5B43F7260F93130067647F /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0E004341260F0E6B00FE737E /* Project object */;
 }

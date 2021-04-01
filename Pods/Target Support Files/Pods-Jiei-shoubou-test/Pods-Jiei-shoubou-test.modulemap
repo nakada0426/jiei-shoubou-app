@@ -1,0 +1,6 @@
+framework module Pods_Jiei_shoubou_test {
+  umbrella header "Pods-Jiei-shoubou-test-umbrella.h"
+
+  export *
+  module * { export * }
+}
