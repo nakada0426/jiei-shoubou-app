@@ -18,7 +18,6 @@
 		0E004368260F175F00FE737E /* quiz1.csv in Resources */ = {isa = PBXBuildFile; fileRef = 0E004367260F175F00FE737E /* quiz1.csv */; };
 		0E00436C260F21A800FE737E /* incorrect.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E00436A260F21A800FE737E /* incorrect.png */; };
 		0E00436D260F21A800FE737E /* correct.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E00436B260F21A800FE737E /* correct.png */; };
-		0E004370260F21E700FE737E /* image.zip in Resources */ = {isa = PBXBuildFile; fileRef = 0E00436F260F21E700FE737E /* image.zip */; };
 		0E004373260F309800FE737E /* SelectLevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E004372260F309800FE737E /* SelectLevelViewController.swift */; };
 		0E004376260F38B100FE737E /* quiz2.csv in Resources */ = {isa = PBXBuildFile; fileRef = 0E004375260F38B100FE737E /* quiz2.csv */; };
 		0E004379260F38FA00FE737E /* quiz3.csv in Resources */ = {isa = PBXBuildFile; fileRef = 0E004378260F38FA00FE737E /* quiz3.csv */; };
@@ -42,7 +41,6 @@
 		0E004367260F175F00FE737E /* quiz1.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = quiz1.csv; sourceTree = "<group>"; };
 		0E00436A260F21A800FE737E /* incorrect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = incorrect.png; sourceTree = "<group>"; };
 		0E00436B260F21A800FE737E /* correct.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = correct.png; sourceTree = "<group>"; };
-		0E00436F260F21E700FE737E /* image.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = image.zip; sourceTree = "<group>"; };
 		0E004372260F309800FE737E /* SelectLevelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectLevelViewController.swift; sourceTree = "<group>"; };
 		0E004375260F38B100FE737E /* quiz2.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = quiz2.csv; sourceTree = "<group>"; };
 		0E004378260F38FA00FE737E /* quiz3.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = quiz3.csv; sourceTree = "<group>"; };
@@ -73,7 +71,6 @@
 				0E00436B260F21A800FE737E /* correct.png */,
 				0E00436A260F21A800FE737E /* incorrect.png */,
 				0E638F1626149DBA008C48CD /* launch-image2.png */,
-				0E00436F260F21E700FE737E /* image.zip */,
 				0E00434A260F0E6B00FE737E /* Products */,
 				CD283736A4CCF5569A0A6350 /* Pods */,
 				55A8DB120FF8383E0E40748D /* Frameworks */,
@@ -194,7 +191,6 @@
 				0E00436C260F21A800FE737E /* incorrect.png in Resources */,
 				0E004359260F0E6D00FE737E /* LaunchScreen.storyboard in Resources */,
 				0E00436D260F21A800FE737E /* correct.png in Resources */,
-				0E004370260F21E700FE737E /* image.zip in Resources */,
 				0E004356260F0E6D00FE737E /* Assets.xcassets in Resources */,
 				0E5B43FC260F95AA0067647F /* 38473-fireworks-icon.json in Resources */,
 				0E004379260F38FA00FE737E /* quiz3.csv in Resources */,

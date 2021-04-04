@@ -51,7 +51,7 @@ class QuizViewController: UIViewController {
         answerButton3.layer.borderColor = UIColor.white.cgColor
         answerButton4.layer.borderWidth = 1
         answerButton4.layer.borderColor = UIColor.white.cgColor
-
+        
         // Do any additional setup after loading the view.
     }
     
@@ -63,12 +63,12 @@ class QuizViewController: UIViewController {
     //ボタンを押したときに呼ばれる
     @IBAction func btnAction(sender: UIButton) {
         if sender.tag == Int(quizArray[1]) {
-        correctCount += 1
-        print("正解")
-        judgeImageView.image = UIImage(named: "correct")
+            correctCount += 1
+            print("正解")
+            judgeImageView.image = UIImage(named: "correct")
         } else {
-        print("不正解")
-        judgeImageView.image = UIImage(named: "incorrect")
+            print("不正解")
+            judgeImageView.image = UIImage(named: "incorrect")
         }
         print("スコア：\(correctCount)")
         judgeImageView.isHidden = false
@@ -77,39 +77,39 @@ class QuizViewController: UIViewController {
         answerButton3.isEnabled = false
         answerButton4.isEnabled = false
         DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
-           self.judgeImageView.isHidden = true
-           self.answerButton1.isEnabled = true
-           self.answerButton2.isEnabled = true
-           self.answerButton3.isEnabled = true
-           self.answerButton4.isEnabled = true
-           self.nextQuiz()
+            self.judgeImageView.isHidden = true
+            self.answerButton1.isEnabled = true
+            self.answerButton2.isEnabled = true
+            self.answerButton3.isEnabled = true
+            self.answerButton4.isEnabled = true
+            self.nextQuiz()
         }
     }
     
     func nextQuiz() {
         quizCount += 1
         if quizCount < csvArray.count {
-        quizArray = csvArray[quizCount].components(separatedBy: ",")
-        quizNumberLabel.text = "第\(quizCount + 1)問"
-        quizTextView.text = quizArray[0]
-        answerButton1.setTitle(quizArray[2], for: .normal)
-        answerButton2.setTitle(quizArray[3], for: .normal)
-        answerButton3.setTitle(quizArray[4], for: .normal)
-        answerButton4.setTitle(quizArray[5], for: .normal)
+            quizArray = csvArray[quizCount].components(separatedBy: ",")
+            quizNumberLabel.text = "第\(quizCount + 1)問"
+            quizTextView.text = quizArray[0]
+            answerButton1.setTitle(quizArray[2], for: .normal)
+            answerButton2.setTitle(quizArray[3], for: .normal)
+            answerButton3.setTitle(quizArray[4], for: .normal)
+            answerButton4.setTitle(quizArray[5], for: .normal)
         } else {
-        performSegue(withIdentifier: "toScoreVC", sender: nil)
+            performSegue(withIdentifier: "toScoreVC", sender: nil)
         }
     }
     
     func loadCSV(fileName: String) -> [String] {
         let csvBundle = Bundle.main.path(forResource: fileName, ofType: "csv")!
         do {
-        let csvData = try String(contentsOfFile: csvBundle,encoding: String.Encoding.utf8)
-        let lineChange = csvData.replacingOccurrences(of: "\r", with: "\n")
-        csvArray = lineChange.components(separatedBy: "\n")
-        csvArray.removeLast()
+            let csvData = try String(contentsOfFile: csvBundle,encoding: String.Encoding.utf8)
+            let lineChange = csvData.replacingOccurrences(of: "\r", with: "\n")
+            csvArray = lineChange.components(separatedBy: "\n")
+            csvArray.removeLast()
         } catch {
-        print("エラー")
+            print("エラー")
         }
         return csvArray
     }
@@ -118,31 +118,31 @@ class QuizViewController: UIViewController {
         bannerView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(bannerView)
         view.addConstraints(
-        [NSLayoutConstraint(item: bannerView,
-                    attribute: .bottom,
-                    relatedBy: .equal,
-                    toItem: view.safeAreaLayoutGuide,
-                    attribute: .bottom,
-                    multiplier: 1,
-                    constant: 0),
-         NSLayoutConstraint(item: bannerView,
-                    attribute: .centerX,
-                    relatedBy: .equal,
-                    toItem: view,
-                    attribute: .centerX,
-                    multiplier: 1,
-                    constant: 0)
-        ])
+            [NSLayoutConstraint(item: bannerView,
+                                attribute: .bottom,
+                                relatedBy: .equal,
+                                toItem: view.safeAreaLayoutGuide,
+                                attribute: .bottom,
+                                multiplier: 1,
+                                constant: 0),
+             NSLayoutConstraint(item: bannerView,
+                                attribute: .centerX,
+                                relatedBy: .equal,
+                                toItem: view,
+                                attribute: .centerX,
+                                multiplier: 1,
+                                constant: 0)
+            ])
     }
     
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }
