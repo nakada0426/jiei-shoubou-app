@@ -7,18 +7,28 @@
 
 import UIKit
 
+
 class ScoreViewController: UIViewController {
-    @IBOutlet var scoreLabel: UILabel!
+  
     
+    @IBOutlet var commentlavel: UILabel!
+    @IBOutlet var scoreLabel: UILabel!
     var correct = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
+        if ( correct > 10 ) {
+            commentlavel.text = "すばらしい!"
+        } else {
+            commentlavel.text = "残念！"
+        }
+
         scoreLabel.text = "\(correct)問正解!"
         
         // Do any additional setup after loading the view.
     }
+
     
     @IBAction func shareButtonAction(_ sender: Any) {
         let activityItems = ["\(correct)問正解しました！", "#自衛消防技術試験アプリ"]
@@ -38,7 +48,5 @@ class ScoreViewController: UIViewController {
      override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
      // Get the new view controller using segue.destination.
      // Pass the selected object to the new view controller.
-     }
      */
-    
 }

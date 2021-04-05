@@ -321,6 +321,12 @@
                                     <action selector="shareButtonAction:" destination="wQm-r5-uyx" eventType="touchUpInside" id="Dfp-77-ko9"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="02t-DX-hkU">
+                                <rect key="frame" x="167" y="120" width="41.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="RXh-Qs-tY1"/>
                         <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor"/>
@@ -328,6 +334,8 @@
                             <constraint firstItem="Lh7-Cg-0Kf" firstAttribute="leading" secondItem="RXh-Qs-tY1" secondAttribute="leading" constant="20" id="6SA-Xb-HYS"/>
                             <constraint firstItem="Jit-vi-dqO" firstAttribute="top" secondItem="RXh-Qs-tY1" secondAttribute="top" constant="70" id="Hjy-8g-9BM"/>
                             <constraint firstAttribute="trailing" secondItem="Lh7-Cg-0Kf" secondAttribute="trailing" constant="20" id="VWB-9a-v3Q"/>
+                            <constraint firstItem="02t-DX-hkU" firstAttribute="centerX" secondItem="jMx-IK-UYC" secondAttribute="centerX" id="ZIR-iP-d1A"/>
+                            <constraint firstItem="02t-DX-hkU" firstAttribute="top" secondItem="Jit-vi-dqO" secondAttribute="bottom" constant="8" id="bZX-p0-nrK"/>
                             <constraint firstItem="zLY-UL-yDo" firstAttribute="centerY" secondItem="jMx-IK-UYC" secondAttribute="centerY" id="c3G-90-wvP"/>
                             <constraint firstItem="zLY-UL-yDo" firstAttribute="top" secondItem="Lh7-Cg-0Kf" secondAttribute="bottom" constant="50" id="f25-8H-M88"/>
                             <constraint firstItem="zLY-UL-yDo" firstAttribute="leading" secondItem="RXh-Qs-tY1" secondAttribute="leading" constant="20" id="fu5-Vk-CrT"/>
@@ -337,12 +345,13 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="commentlavel" destination="02t-DX-hkU" id="brA-KS-n6f"/>
                         <outlet property="scoreLabel" destination="Jit-vi-dqO" id="SJR-wt-drb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mfi-FI-EVh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1443.4782608695652" y="99.776785714285708"/>
+            <point key="canvasLocation" x="1442.4000000000001" y="99.400299850074973"/>
         </scene>
     </scenes>
     <resources>
