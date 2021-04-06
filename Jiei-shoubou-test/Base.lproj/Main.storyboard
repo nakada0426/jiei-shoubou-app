@@ -345,7 +345,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="commentlavel" destination="02t-DX-hkU" id="brA-KS-n6f"/>
+                        <outlet property="Resultlavel" destination="02t-DX-hkU" id="brA-KS-n6f"/>
                         <outlet property="scoreLabel" destination="Jit-vi-dqO" id="SJR-wt-drb"/>
                     </connections>
                 </viewController>
