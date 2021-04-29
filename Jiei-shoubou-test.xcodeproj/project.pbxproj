@@ -98,8 +98,8 @@
 				0E00435A260F0E6D00FE737E /* Info.plist */,
 				0E004361260F11D700FE737E /* QuizViewController.swift */,
 				0E004364260F130400FE737E /* ScoreViewController.swift */,
-				0E004367260F175F00FE737E /* quiz1.csv */,
 				0E004372260F309800FE737E /* SelectLevelViewController.swift */,
+				0E004367260F175F00FE737E /* quiz1.csv */,
 				0E004375260F38B100FE737E /* quiz2.csv */,
 				0E004378260F38FA00FE737E /* quiz3.csv */,
 			);

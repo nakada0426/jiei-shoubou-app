@@ -51,8 +51,7 @@ class QuizViewController: UIViewController {
         answerButton3.layer.borderColor = UIColor.white.cgColor
         answerButton4.layer.borderWidth = 1
         answerButton4.layer.borderColor = UIColor.white.cgColor
-        
-        // Do any additional setup after loading the view.
+    
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -76,7 +75,7 @@ class QuizViewController: UIViewController {
         answerButton2.isEnabled = false
         answerButton3.isEnabled = false
         answerButton4.isEnabled = false
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3.5) {
             self.judgeImageView.isHidden = true
             self.answerButton1.isEnabled = true
             self.answerButton2.isEnabled = true
@@ -84,6 +83,10 @@ class QuizViewController: UIViewController {
             self.answerButton4.isEnabled = true
             self.nextQuiz()
         }
+        //解答解説ダイアログ
+        let dialog = UIAlertController(title: "解答解説", message: "解答解説", preferredStyle: .alert)
+        dialog.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        self.present(dialog, animated: true, completion: nil)
     }
     
     func nextQuiz() {
@@ -99,6 +102,7 @@ class QuizViewController: UIViewController {
         } else {
             performSegue(withIdentifier: "toScoreVC", sender: nil)
         }
+
     }
     
     func loadCSV(fileName: String) -> [String] {

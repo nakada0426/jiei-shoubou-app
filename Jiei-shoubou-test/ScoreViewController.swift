@@ -36,21 +36,6 @@ class ScoreViewController: UIViewController , GADFullScreenContentDelegate {
         scoreLabel.text = "\(correct)問正解!"
     }
     
-    func createInterAd(){
-        let request = GADRequest()
-        GADInterstitialAd.load(withAdUnitID:"ca-app-pub-3940256099942544/4411468910",
-                               request: request,
-                               completionHandler: { [self] ad, error in
-                                if let error = error {
-                                    print("Failed 失敗です　to load interstitial ad with error: \(error.localizedDescription)")
-                                    return
-                                }
-                                interstitial = ad
-                                interstitial?.fullScreenContentDelegate = self
-                               }
-        )
-    }
-
     func ad(_ ad: GADFullScreenPresentingAd, didFailToPresentFullScreenContentWithError error: Error) {
         print("広告表示の失敗　Ad did fail to present full screen content.")
     }
@@ -69,13 +54,12 @@ class ScoreViewController: UIViewController , GADFullScreenContentDelegate {
     }
     
     @IBAction func toTopButtonAction(_ sender: Any) {
-        self.presentingViewController?.presentingViewController?.presentingViewController?.dismiss(animated: true)
         if interstitial != nil {
-          interstitial.present(fromRootViewController: self)
+            interstitial.present(fromRootViewController: self)
         } else {
-          print("Ad wasn't ready")
+            print("Ad wasn't ready")
         }
-
+        
     }
-
+    
 }
